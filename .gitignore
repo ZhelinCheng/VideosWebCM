@@ -12,7 +12,9 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+.idea/*
 
+/.idea/
 /.DS_Store
 /node_modules/
 /npm-debug.log*
