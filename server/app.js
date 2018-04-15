@@ -8,7 +8,7 @@ const logger = require('koa-logger')
 
 const index = require('./routes/index')
 
-// error handler
+// 错误处理
 onError(app)
 
 // middlewares
@@ -25,7 +25,7 @@ app.use(views(__dirname + '/views', {
   extension: 'pug'
 }))
 
-// logger
+// 打印log
 app.use(async (ctx, next) => {
   const start = new Date()
   await next()
