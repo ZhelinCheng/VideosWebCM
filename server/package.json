@@ -1,0 +1,30 @@
+{
+  "name": "VwCMServer",
+  "version": "1.0.0",
+  "description": "视频网站内容管理",
+  "main": "index.js",
+  "author": "ZhelinCheng <chengzhelin@foxmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhelinCheng/VideosWebCM.git"
+  },
+  "keywords": [
+    "video"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhelinCheng/VideosWebCM/issues"
+  },
+  "homepage": "https://github.com/ZhelinCheng/VideosWebCM#readme",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-views": "^6.1.4"
+  }
+}
