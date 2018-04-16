@@ -6,15 +6,15 @@ const onError = require('koa-onerror')
 const bodyParser = require('koa-bodyparser')
 const logger = require('koa-logger')
 
+// 路由
 const index = require('./routes/index')
+const api_users = require('./routes/api_users')
 
 // 错误处理
 onError(app)
 
-// middlewares
-app.use(bodyParser({
-  enableTypes:['json', 'form', 'text']
-}))
+// 中间件
+app.use(bodyParser())
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
@@ -35,6 +35,7 @@ app.use(async (ctx, next) => {
 
 // routes
 app.use(index.routes(), index.allowedMethods())
+app.use(api_users.routes(), api_users.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
